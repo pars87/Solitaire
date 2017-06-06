@@ -1,6 +1,13 @@
-﻿namespace SolitaireViewModel
+﻿using SolitaireModel;
+
+namespace SolitaireViewModel
 {
-    interface IDealer
+    public interface IDealer
     {
+        ICard DealACard();
+
+        void Shuffle();
+
+        void Deal();
     }
 }

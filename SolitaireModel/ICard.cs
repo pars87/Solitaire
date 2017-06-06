@@ -1,6 +1,6 @@
 ﻿namespace SolitaireModel
 {
-    interface IPlayingCard : ICard
+    public interface IPlayingCard : ICard
     {
         Ranks Rank { get; }
 

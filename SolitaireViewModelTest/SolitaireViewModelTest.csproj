@@ -48,11 +48,21 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="DealerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolitaireModel\SolitaireModel.csproj">
+      <Project>{f4840060-e455-4972-8d27-4a777ddf2f79}</Project>
+      <Name>SolitaireModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolitaireViewModel\SolitaireViewModel.csproj">
+      <Project>{5658695e-6f30-4fc4-9280-30fb9c408683}</Project>
+      <Name>SolitaireViewModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

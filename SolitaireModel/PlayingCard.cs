@@ -10,15 +10,20 @@ namespace SolitaireModel
             Rank = rank;
         }
 
-        public Ranks Rank { get; }
-
-        public Suits Suit { get; }
-
         public bool Equals(PlayingCard other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
             return Rank == other.Rank && Suit == other.Suit;
+        }
+
+        public Ranks Rank { get; }
+
+        public Suits Suit { get; }
+
+        public override string ToString()
+        {
+            return "[" + Suit + ";" + Rank + "]";
         }
 
         public override bool Equals(object obj)

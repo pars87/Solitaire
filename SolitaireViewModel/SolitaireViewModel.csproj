@@ -41,8 +41,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dealer.cs" />
+    <Compile Include="GameManager.cs" />
     <Compile Include="IDealer.cs" />
+    <Compile Include="IGame.cs" />
+    <Compile Include="IGameManager.cs" />
+    <Compile Include="IPlayer.cs" />
+    <Compile Include="ISolitaireDealer.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Solitaire.cs" />
+    <Compile Include="SolitaireDealer.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SolitaireModel\SolitaireModel.csproj">
+      <Project>{f4840060-e455-4972-8d27-4a777ddf2f79}</Project>
+      <Name>SolitaireModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

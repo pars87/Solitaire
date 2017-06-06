@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SolitaireView")]
+[assembly: AssemblyTitle("SolitaireConsole")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SolitaireView")]
+[assembly: AssemblyProduct("SolitaireConsole")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2284cb63-e28f-4177-aa2e-1cc2ea5722c1")]
+[assembly: Guid("271a7fce-f294-4968-92fa-5efa5a45d6bd")]
 
 // Version information for an assembly consists of the following four values:
 //

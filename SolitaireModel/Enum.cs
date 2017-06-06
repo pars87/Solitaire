@@ -24,4 +24,9 @@
         Queen,
         King
     }
+
+   public enum Game
+    {
+        Solitaire
+    }
 }
