@@ -13,9 +13,9 @@ namespace SolitaireModel
             Cards = new List<ICard>();
 
             // Initialize the deck
-            foreach (Suits suit in Enum.GetValues(typeof(Suits)))
+            foreach (Suit suit in Enum.GetValues(typeof(Suit)))
             {
-                foreach (Ranks rank in Enum.GetValues(typeof(Ranks)))
+                foreach (Rank rank in Enum.GetValues(typeof(Rank)))
                 {
                     Cards.Add(new PlayingCard(suit, rank));
                 }

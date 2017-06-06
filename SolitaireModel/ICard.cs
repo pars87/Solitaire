@@ -2,10 +2,13 @@
 {
     public interface IPlayingCard : ICard
     {
-        Ranks Rank { get; }
+        Rank Rank { get; }
 
-        Suits Suit { get; }
+        Suit Suit { get; }
     }
 
-    public interface ICard {}
+    public interface ICard
+    {
+        CardColor Color { get; }
+    }
 }

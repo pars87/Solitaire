@@ -10,9 +10,9 @@ namespace SolitaireViewModel
             Board = board;
             CardDeck = cardDeck;
         }
+        
 
-        //bool IsMoveToFoundationValid(ICard FromCard, ICard toCard);
-
+        // bool IsMoveToFoundationValid(ICard FromCard, ICard toCard);
         public ISolitaireDealer Dealer { get; private set; }
 
         public ISolitaireBoard Board { get; private set; }

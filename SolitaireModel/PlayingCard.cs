@@ -4,10 +4,19 @@ namespace SolitaireModel
 {
     public class PlayingCard : IPlayingCard, IEquatable<PlayingCard>
     {
-        public PlayingCard(Suits suit, Ranks rank)
+        public PlayingCard(Suit suit, Rank rank)
         {
             Suit = suit;
             Rank = rank;
+
+            if (Suit == Suit.Clubs || Suit == Suit.Spades)
+            {
+                Color = CardColor.Black;
+            }
+            else
+            {
+                Color = CardColor.Red;
+            }
         }
 
         public bool Equals(PlayingCard other)
@@ -17,9 +26,9 @@ namespace SolitaireModel
             return Rank == other.Rank && Suit == other.Suit;
         }
 
-        public Ranks Rank { get; }
+        public Rank Rank { get; }
 
-        public Suits Suit { get; }
+        public Suit Suit { get; }
 
         public override string ToString()
         {
@@ -51,5 +60,7 @@ namespace SolitaireModel
         {
             return !Equals(left, right);
         }
+
+        public CardColor Color { get; }
     }
 }

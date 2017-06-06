@@ -6,5 +6,7 @@
         {
             return "Joker";
         }
+
+        public CardColor Color { get; }
     }
 }

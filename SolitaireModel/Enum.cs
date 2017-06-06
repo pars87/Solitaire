@@ -1,6 +1,6 @@
 ﻿namespace SolitaireModel
 {
-    public enum Suits
+    public enum Suit
     {
         Clubs,
         Diamonds,
@@ -8,7 +8,7 @@
         Spades
     }
 
-    public enum Ranks
+    public enum Rank
     {
         Ace,
         Two,
@@ -25,8 +25,15 @@
         King
     }
 
-   public enum Game
+    public enum Game
     {
         Solitaire
+    }
+
+    public enum CardColor
+    {
+        Black,
+
+        Red
     }
 }
