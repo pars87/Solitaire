@@ -1,0 +1,6 @@
+﻿namespace SolitaireViewModel
+{
+    interface IDealer
+    {
+    }
+}

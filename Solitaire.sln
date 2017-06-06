@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolitaireViewModel", "SolitaireViewModel\SolitaireViewModel.csproj", "{890FD99F-81BB-40E8-A67D-3D676BBAC596}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolitaireModel", "SolitaireModel\SolitaireModel.csproj", "{F4840060-E455-4972-8D27-4A777DDF2F79}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolitaireView", "SolitaireView\SolitaireView.csproj", "{2284CB63-E28F-4177-AA2E-1CC2EA5722C1}"
@@ -17,16 +15,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolitaireViewModelTest", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolitaireViewTest", "SolitaireViewTest\SolitaireViewTest.csproj", "{092EF03C-D2CA-4CF0-9D76-911BFD4E916C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolitaireViewModel", "SolitaireViewModel\SolitaireViewModel.csproj", "{5658695E-6F30-4FC4-9280-30FB9C408683}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{890FD99F-81BB-40E8-A67D-3D676BBAC596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{890FD99F-81BB-40E8-A67D-3D676BBAC596}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{890FD99F-81BB-40E8-A67D-3D676BBAC596}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{890FD99F-81BB-40E8-A67D-3D676BBAC596}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4840060-E455-4972-8D27-4A777DDF2F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4840060-E455-4972-8D27-4A777DDF2F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4840060-E455-4972-8D27-4A777DDF2F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,6 +43,10 @@ Global
 		{092EF03C-D2CA-4CF0-9D76-911BFD4E916C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{092EF03C-D2CA-4CF0-9D76-911BFD4E916C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{092EF03C-D2CA-4CF0-9D76-911BFD4E916C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5658695E-6F30-4FC4-9280-30FB9C408683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5658695E-6F30-4FC4-9280-30FB9C408683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5658695E-6F30-4FC4-9280-30FB9C408683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5658695E-6F30-4FC4-9280-30FB9C408683}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
