@@ -4,6 +4,6 @@ namespace SolitaireModel
 {
     public interface ICardDeck
     {
-        List<Card> Cards { get; }
+        List<ICard> Cards { get; }
     }
 }

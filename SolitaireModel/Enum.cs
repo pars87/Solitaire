@@ -5,8 +5,7 @@
         Clubs,
         Diamonds,
         Hearts,
-        Spades,
-        None
+        Spades
     }
 
     public enum Ranks
@@ -23,7 +22,6 @@
         Ten,
         Jack,
         Queen,
-        King,
-        Joker
+        King
     }
 }

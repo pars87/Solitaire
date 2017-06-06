@@ -2,9 +2,9 @@
 
 namespace SolitaireModel
 {
-    public class Card : ICard, IEquatable<Card>
+    public class PlayingCard : IPlayingCard, IEquatable<PlayingCard>
     {
-        public Card(Suits suit, Ranks rank)
+        public PlayingCard(Suits suit, Ranks rank)
         {
             Suit = suit;
             Rank = rank;
@@ -14,7 +14,7 @@ namespace SolitaireModel
 
         public Suits Suit { get; }
 
-        public bool Equals(Card other)
+        public bool Equals(PlayingCard other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
@@ -26,7 +26,7 @@ namespace SolitaireModel
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
             if (obj.GetType() != this.GetType()) return false;
-            return Equals((Card)obj);
+            return Equals((PlayingCard)obj);
         }
 
         public override int GetHashCode()
@@ -37,12 +37,12 @@ namespace SolitaireModel
             }
         }
 
-        public static bool operator ==(Card left, Card right)
+        public static bool operator ==(PlayingCard left, PlayingCard right)
         {
             return Equals(left, right);
         }
 
-        public static bool operator !=(Card left, Card right)
+        public static bool operator !=(PlayingCard left, PlayingCard right)
         {
             return !Equals(left, right);
         }

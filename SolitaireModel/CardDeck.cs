@@ -10,24 +10,14 @@ namespace SolitaireModel
     {
         public CardDeck(uint nrOfJoke = 0)
         {
-            Cards = new List<Card>();
+            Cards = new List<ICard>();
 
             // Initialize the deck
             foreach (Suits suit in Enum.GetValues(typeof(Suits)))
             {
-                if (suit == Suits.None)
-                {
-                    continue;
-                }
-
                 foreach (Ranks rank in Enum.GetValues(typeof(Ranks)))
                 {
-                    if (rank == Ranks.Joker)
-                    {
-                        continue;
-                    }
-
-                    Cards.Add(new Card(suit, rank));
+                    Cards.Add(new PlayingCard(suit, rank));
                 }
             }
 
@@ -35,7 +25,7 @@ namespace SolitaireModel
             AddJoker(nrOfJoke);
         }
 
-        public List<Card> Cards { get; }
+        public List<ICard> Cards { get; }
 
         private void AddJoker(uint nrOfJoke)
         {
@@ -46,12 +36,12 @@ namespace SolitaireModel
 
             if (Cards == null)
             {
-                throw new NullReferenceException("Card in not initilized");
+                throw new NullReferenceException("Card deck in not initilized.");
             }
 
             for (int i = 0; i < nrOfJoke; i++)
             {
-                Cards.Add(new Card(Suits.None, Ranks.Joker));
+                Cards.Add(new JokerCard());
             }
         }
     }
