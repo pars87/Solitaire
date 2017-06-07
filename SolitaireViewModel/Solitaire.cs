@@ -9,11 +9,13 @@ namespace SolitaireViewModel
             Dealer = dealer;
             Board = board;
             CardDeck = cardDeck;
+            player = new Player();
         }
-        
+
 
         // bool IsMoveToFoundationValid(ICard FromCard, ICard toCard);
         public ISolitaireDealer Dealer { get; private set; }
+        public IPlayer player { get; private set; }
 
         public ISolitaireBoard Board { get; private set; }
 
